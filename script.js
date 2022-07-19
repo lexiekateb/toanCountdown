@@ -1,6 +1,25 @@
 document.addEventListener('DOMContentLoaded', () =>
-  requestAnimationFrame(updateTime)
+  requestAnimationFrame(updateTime),
+  requestAnimationFrame(updateBackground)
 )
+
+var i = 1;
+
+function updateBackground() {
+  var y = setInterval(function(){ 
+
+    if(i > 9) {
+      i = 1;
+    }
+    
+    var pic = new Image();
+    pic.src = i + ".jpeg";
+    
+    document.body.style.backgroundImage = "url('"+ i + ".jpeg')";
+    i++;
+
+    }, 5000)
+}
 
 function updateTime() {
   
