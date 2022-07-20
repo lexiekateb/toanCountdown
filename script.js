@@ -23,7 +23,7 @@ function updateBackground() {
 
 function updateTime() {
   
-  var countDownDate = new Date("Aug 15, 2022 12:00:00").getTime();
+  var countDownDate = new Date("Aug 15, 2022 21:08:00").getTime();
 
   var x = setInterval(function() {
 
